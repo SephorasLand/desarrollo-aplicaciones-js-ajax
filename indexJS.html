@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="functions.js"></script>
+</head>
+<body>
+    <div style="background-color: black; text-align: center;">
+        <a href="index.html" class="boton-js-ajax">Volver a inicio</a>
+    </div>
+    <div class="cuadrante">
+        <h2>Ejercicio 1</h2>
+        <p>Detectar si la cadena de entrada en un palíndromo.</p>
+        <form>
+            <input type="text" name="textPalindrome" id="textPalindrome">
+            <input type="button" value="Comprobar" onclick="isPalindrome(document.getElementById('textPalindrome').value)">
+        </form>
+        <p id="texto-solucion-1" style="color: darkred;"></p>
+    </div>
+
+    <div class="cuadrante">
+        <h2>Ejercicio 2</h2>
+        <p>Escribe un programa que pida dos números y escriba en la pantalla cuál es el mayor.</p>
+        <form>
+            Introducir número: <input type="number" id="number1"><br><br> 
+            Introducir número: <input type="number" id="number2"><br><br>
+            <input type="button" value="Comprobar cuál es el mayor" onclick="checkLarger(document.getElementById('number1').value,document.getElementById('number2').value)">
+        </form>
+        <p id="texto-solucion-2" style="color: darkred;"></p>
+    </div>
+
+    <div class="cuadrante">
+        <h2>Ejercicio 3</h2>
+        <p>Escribe un programa que pida una frase y escriba las vocales que aparecen.</p>
+        <textarea rows="5" cols="60" name="longText" id="longText">Escribir frase aqui</textarea>
+        <br>
+        <input type="button" value="Obtener vocales" onclick="getVowels(document.getElementById('longText').value)">
+        <p id="texto-solucion-3" style="color: darkred;"></p>
+    </div>
+
+    <div class="cuadrante">
+        <h2>Ejercicio 4</h2>
+        <p>Escribe un programa que pida una frase y escriba cuántas veces aparecen cada una de las vocales.</p>
+        <textarea rows="5" cols="60" name="longText2" id="longText2">Escribir frase aqui</textarea>
+        <br>
+        <input type="button" value="Obtener número de vocales" onclick="getNumberVowels(document.getElementById('longText2').value)">
+        <p id="texto-solucion-4" style="color: darkred;"></p>
+    </div>
+
+</body>
+</html>
